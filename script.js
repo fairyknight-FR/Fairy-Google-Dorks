@@ -1,33 +1,36 @@
-const searchInput = document.getElementById('search');
-const resultsList = document.getElementById('results');
-let dorksData = [];
+// Dummy Data Example: replace with fetching your dorks.json file in production
+const dorks = [
+  { dork: "machine:Kioptrix" },
+  { dork: "port:80" },
+  { dork: "service:http" },
+  { dork: "product:mysql" },
+  { dork: "version:9" },
+  { dork: "platform:infosecwarrior" }
+];
+// For production: use fetch('dorks.json').then(...)
 
-fetch('dorks.json')
-  .then(res => res.json())
-  .then(data => {
-    dorksData = data;
-    displayResults(dorksData);
+document.getElementById('count').textContent = dorks.length;
+
+const searchInput = document.getElementById('search');
+const tagsDiv = document.getElementById('tags');
+const resultsCount = document.getElementById('results-count');
+
+function showTags(filtered) {
+  tagsDiv.innerHTML = '';
+  filtered.forEach(tag => {
+    const pill = document.createElement('span');
+    pill.className = 'tag-pill';
+    pill.textContent = tag.dork;
+    tagsDiv.appendChild(pill);
   });
+  resultsCount.textContent = filtered.length;
+}
 
 searchInput.addEventListener('input', () => {
   const query = searchInput.value.toLowerCase();
-  const filtered = dorksData.filter(dork =>
-    dork.dork.toLowerCase().includes(query) ||
-    dork.category.toLowerCase().includes(query) ||
-    dork.purpose.toLowerCase().includes(query)
-  );
-  displayResults(filtered);
+  const filtered = dorks.filter(tag => tag.dork.toLowerCase().includes(query));
+  showTags(filtered);
 });
 
-function displayResults(items) {
-  resultsList.innerHTML = '';
-  if(items.length === 0) {
-    resultsList.innerHTML = '<li>No results found</li>';
-    return;
-  }
-  items.forEach(item => {
-    const li = document.createElement('li');
-    li.innerHTML = `<strong>${item.dork}</strong><br/><em>${item.category}</em><br/>${item.purpose}`;
-    resultsList.appendChild(li);
-  });
-}
+// Show all by default
+showTags(dorks);
