@@ -1,0 +1,487 @@
+[
+  {
+    "dork": "intitle:facebook",
+    "category": "Advanced Operators",
+    "purpose": "Restricts your search to the titles of web pages"
+  },
+  {
+    "dork": "intitle:\"Ethical Hacking\"",
+    "category": "Advanced Operators",
+    "purpose": "Search with space needs quotes or dot"
+  },
+  {
+    "dork": "allintitle:\"ethical hacking\"",
+    "category": "Advanced Operators",
+    "purpose": "Finds pages with all words in title"
+  },
+  {
+    "dork": "inurl:ethical-hacking",
+    "category": "Advanced Operators",
+    "purpose": "Restricts search to URLs"
+  },
+  {
+    "dork": "allinurl:fairy-warrior",
+    "category": "Advanced Operators",
+    "purpose": "Finds all listed words in URL"
+  },
+  {
+    "dork": "intext:\"fairy warrior\"",
+    "category": "Advanced Operators",
+    "purpose": "Searches only body text"
+  },
+  {
+    "dork": "filetype:pdf \"ethical hacking\"",
+    "category": "Advanced Operators",
+    "purpose": "Searches PDF file extensions"
+  },
+  {
+    "dork": "filetype:ppt \"ethical hacking\"",
+    "category": "Advanced Operators",
+    "purpose": "Searches PPT file extensions"
+  },
+  {
+    "dork": "filetype:pdf \"google hacking\"",
+    "category": "Advanced Operators",
+    "purpose": "Searches PDF file extensions"
+  },
+  {
+    "dork": "site:https://www.demo.com",
+    "category": "Advanced Operators",
+    "purpose": "Narrow search to site URL or TLD"
+  },
+  {
+    "dork": "site:*.gov.in",
+    "category": "Advanced Operators",
+    "purpose": "Search government websites"
+  },
+  {
+    "dork": "site:*.gov.in inurl:wp-admin",
+    "category": "Advanced Operators",
+    "purpose": "Government WordPress admin pages"
+  },
+  {
+    "dork": "site:*.gov.in inurl:login.php",
+    "category": "Advanced Operators",
+    "purpose": "Government PHP login pages"
+  },
+  {
+    "dork": "inanchor:ethicalhacking",
+    "category": "Advanced Operators",
+    "purpose": "Searches text in link anchors"
+  },
+  {
+    "dork": "link:www.demo.com",
+    "category": "Advanced Operators",
+    "purpose": "Pages linking to URL"
+  },
+  {
+    "dork": "cache:www.demo.com",
+    "category": "Advanced Operators",
+    "purpose": "Find cached indexed copy"
+  },
+  {
+    "dork": "related:google.com",
+    "category": "Advanced Operators",
+    "purpose": "Find pages related to URL"
+  },
+  {
+    "dork": "info:google.com",
+    "category": "Advanced Operators",
+    "purpose": "Page with info links about URL"
+  },
+  {
+    "dork": "index.of.dcim",
+    "category": "Directory Listing",
+    "purpose": "Exposed DCIM (camera images) folders"
+  },
+  {
+    "dork": "index.of",
+    "category": "Directory Listing",
+    "purpose": "Any open directory listing"
+  },
+  {
+    "dork": "index.of.password",
+    "category": "Directory Listing",
+    "purpose": "Directories/files with password relevance"
+  },
+  {
+    "dork": "index.of.password.txt",
+    "category": "Directory Listing",
+    "purpose": "Exposed password.txt files"
+  },
+  {
+    "dork": "index.of.backup",
+    "category": "Directory Listing",
+    "purpose": "Backup folders/files exposed"
+  },
+  {
+    "dork": "index.of.backup sql",
+    "category": "Directory Listing",
+    "purpose": "SQL database backups"
+  },
+  {
+    "dork": "index.of.backup zip",
+    "category": "Directory Listing",
+    "purpose": "ZIP backup files"
+  },
+  {
+    "dork": "index.of /wp-admin",
+    "category": "Directory Listing",
+    "purpose": "WordPress admin directory exposure"
+  },
+  {
+    "dork": "site:apple.com",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "All indexed pages on apple.com, incl subdomains"
+  },
+  {
+    "dork": "site:apple.com -www",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "Exclude main www subdomain of apple.com"
+  },
+  {
+    "dork": "site:apple.com -www -support -store -searchads",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "Remove major apple.com subdomains"
+  },
+  {
+    "dork": "site:apple.com -www -discussionschinese",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "Remove Chinese discussions subdomain"
+  },
+  {
+    "dork": "site:apple.com -www -discussionsjapan",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "Remove Japanese discussions subdomain"
+  },
+  {
+    "dork": "site:apple.com -www -discussionskorea -testflight",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "Remove Korean discussions and TestFlight"
+  },
+  {
+    "dork": "site:apple.com -www -support -stocks -ads -searchads -music -tv -discussionsjapan",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "Highly filtered apple.com searches"
+  },
+  {
+    "dork": "site:apple.com -www -machinelearning",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "Exclude machine learning-related apple pages"
+  },
+  {
+    "dork": "site:business.apple.com",
+    "category": "Apple Subdomain Filtering",
+    "purpose": "Apple enterprise/business pages"
+  },
+  {
+    "dork": "\"index.of\"",
+    "category": "Massive Google Dorks",
+    "purpose": "Open directory listings"
+  },
+  {
+    "dork": "\"index.of.photos\"",
+    "category": "Massive Google Dorks",
+    "purpose": "Public photos directory"
+  },
+  {
+    "dork": "\"index.of.private\"",
+    "category": "Massive Google Dorks",
+    "purpose": "Exposed private folder"
+  },
+  {
+    "dork": "\"index.of.secret\"",
+    "category": "Massive Google Dorks",
+    "purpose": "Secret folders/files exposed"
+  },
+  {
+    "dork": "\"index.of.confidential\"",
+    "category": "Massive Google Dorks",
+    "purpose": "Confidential document leaks"
+  },
+  {
+    "dork": "\"index.of.password.txt\"",
+    "category": "Password / Credentials",
+    "purpose": "Exposed password.txt files"
+  },
+  {
+    "dork": "\"password\" \"username\" \"login\" filetype:txt",
+    "category": "Password / Credentials",
+    "purpose": "Plain text login dumps"
+  },
+  {
+    "dork": "\"id_rsa\"",
+    "category": "Password / Credentials",
+    "purpose": "Exposed private SSH key"
+  },
+  {
+    "dork": "\"id_rsa.pub\"",
+    "category": "Password / Credentials",
+    "purpose": "Public SSH key"
+  },
+  {
+    "dork": "\"DB_PASSWORD\"",
+    "category": "Password / Credentials",
+    "purpose": "Hard-coded DB credentials"
+  },
+  {
+    "dork": "\"FTP\" password filetype:txt",
+    "category": "Password / Credentials",
+    "purpose": "Exposed FTP credentials"
+  },
+  {
+    "dork": "\"backup.zip\"",
+    "category": "Backup & Database",
+    "purpose": "Direct backup file discovery"
+  },
+  {
+    "dork": "\"database.sql\"",
+    "category": "Backup & Database",
+    "purpose": "Raw SQL database files"
+  },
+  {
+    "dork": "\"dump.sql\"",
+    "category": "Backup & Database",
+    "purpose": "SQL dump exposures"
+  },
+  {
+    "dork": "\"db_backup\"",
+    "category": "Backup & Database",
+    "purpose": "Database backups folder"
+  },
+  {
+    "dork": "\"wp-config.php.bak\"",
+    "category": "Backup & Database",
+    "purpose": "WordPress credentials leak backup"
+  },
+  {
+    "dork": "\"config.php\"",
+    "category": "Sensitive Files",
+    "purpose": "PHP credentials file"
+  },
+  {
+    "dork": "\"settings.php\"",
+    "category": "Sensitive Files",
+    "purpose": "Drupal/app config leak"
+  },
+  {
+    "dork": "\"web.config\"",
+    "category": "Sensitive Files",
+    "purpose": "IIS server config leak"
+  },
+  {
+    "dork": "\"phpinfo()\"",
+    "category": "Sensitive Files",
+    "purpose": "Exposed PHP debug info page"
+  },
+  {
+    "dork": "\"env\" filetype:env",
+    "category": "Sensitive Files",
+    "purpose": "Environment variable credentials"
+  },
+  {
+    "dork": "\"docker-compose.yml\"",
+    "category": "Sensitive Files",
+    "purpose": "Hardcoded secrets in Docker config"
+  },
+  {
+    "dork": "\"shadow\" \"passwd\"",
+    "category": "Sensitive Files",
+    "purpose": "Linux password hashes leaked"
+  },
+  {
+    "dork": "\"authorized_keys\"",
+    "category": "Sensitive Files",
+    "purpose": "Exposed SSH authorized keys"
+  },
+  {
+    "dork": "\"access.log\"",
+    "category": "Log Files",
+    "purpose": "Exposed web server access logs"
+  },
+  {
+    "dork": "\"error.log\"",
+    "category": "Log Files",
+    "purpose": "Server error logs leak"
+  },
+  {
+    "dork": "\"debug.log\"",
+    "category": "Log Files",
+    "purpose": "WordPress debug leakage"
+  },
+  {
+    "dork": "\"php_error.log\"",
+    "category": "Log Files",
+    "purpose": "PHP application logs exposure"
+  },
+  {
+    "dork": "inurl:/admin",
+    "category": "Admin Panel",
+    "purpose": "General admin panels"
+  },
+  {
+    "dork": "inurl:/administrator",
+    "category": "Admin Panel",
+    "purpose": "Joomla or custom admin"
+  },
+  {
+    "dork": "inurl:/login",
+    "category": "Admin Panel",
+    "purpose": "Login portals"
+  },
+  {
+    "dork": "intitle:\"Admin Login\"",
+    "category": "Admin Panel",
+    "purpose": "Admin login screen"
+  },
+  {
+    "dork": "inurl:admin.php",
+    "category": "Admin Panel",
+    "purpose": "Direct admin portal"
+  },
+  {
+    "dork": "inurl:dashboard",
+    "category": "Admin Panel",
+    "purpose": "Dashboard pages exposed"
+  },
+  {
+    "dork": "intitle:\"live view\"",
+    "category": "CCTV / Camera",
+    "purpose": "Open camera streams"
+  },
+  {
+    "dork": "inurl:viewerframe?mode=",
+    "category": "CCTV / Camera",
+    "purpose": "IP camera feeds"
+  },
+  {
+    "dork": "intitle:\"IP Camera\"",
+    "category": "CCTV / Camera",
+    "purpose": "Exposed CCTV panels"
+  },
+  {
+    "dork": "\"webcamXP\"",
+    "category": "CCTV / Camera",
+    "purpose": "Webcam streaming servers"
+  },
+  {
+    "dork": "inurl:/wp-admin",
+    "category": "WordPress Dorks",
+    "purpose": "WordPress admin panel"
+  },
+  {
+    "dork": "inurl:/wp-login.php",
+    "category": "WordPress Dorks",
+    "purpose": "WordPress login page"
+  },
+  {
+    "dork": "\"index of\" \"wp-admin\"",
+    "category": "WordPress Dorks",
+    "purpose": "Exposed wp-admin directory"
+  },
+  {
+    "dork": "\"wp-config.php\"",
+    "category": "WordPress Dorks",
+    "purpose": "WordPress credential leak if readable"
+  },
+  {
+    "dork": "inurl:wp-content/uploads",
+    "category": "WordPress Dorks",
+    "purpose": "Media uploads exposed"
+  },
+  {
+    "dork": "\"xmlrpc.php\"",
+    "category": "WordPress Dorks",
+    "purpose": "Bruteforce and DoS entry point"
+  },
+  {
+    "dork": "\"index of\" \".git\"",
+    "category": "Source Code Dorks",
+    "purpose": "Exposed Git repository"
+  },
+  {
+    "dork": "\"index of\" \".svn\"",
+    "category": "Source Code Dorks",
+    "purpose": "SVN repository exposure"
+  },
+  {
+    "dork": "\"site.zip\"",
+    "category": "Source Code Dorks",
+    "purpose": "Entire site backup leak"
+  },
+  {
+    "dork": "\"source code\" filetype:zip",
+    "category": "Source Code Dorks",
+    "purpose": "Exposed source code archives"
+  },
+  {
+    "dork": "\"emails.txt\"",
+    "category": "Email / Personal Data",
+    "purpose": "Exposed email lists"
+  },
+  {
+    "dork": "\"customer list\"",
+    "category": "Email / Personal Data",
+    "purpose": "Customer database leaks"
+  },
+  {
+    "dork": "\"users.csv\"",
+    "category": "Email / Personal Data",
+    "purpose": "User credential dumps"
+  },
+  {
+    "dork": "\"contacts.csv\"",
+    "category": "Email / Personal Data",
+    "purpose": "Contact lists exposed"
+  },
+  {
+    "dork": "\"API_KEY=\"",
+    "category": "API Keys, Tokens, Secrets",
+    "purpose": "Exposed API keys"
+  },
+  {
+    "dork": "\"AWS_SECRET_ACCESS_KEY\"",
+    "category": "API Keys, Tokens, Secrets",
+    "purpose": "AWS credentials leak"
+  },
+  {
+    "dork": "\"token\" filetype:json",
+    "category": "API Keys, Tokens, Secrets",
+    "purpose": "Access tokens in JSON files"
+  },
+  {
+    "dork": "\"firebaseio.com\"",
+    "category": "API Keys, Tokens, Secrets",
+    "purpose": "Open public Firebase database"
+  },
+  {
+    "dork": "\"index of\" \"bucket\"",
+    "category": "Cloud Buckets",
+    "purpose": "Open cloud storage indexes"
+  },
+  {
+    "dork": "\"Amazon S3\" \"index of\"",
+    "category": "Cloud Buckets",
+    "purpose": "Open Amazon S3 buckets"
+  },
+  {
+    "dork": "site:s3.amazonaws.com",
+    "category": "Cloud Buckets",
+    "purpose": "Search AWS S3 buckets"
+  },
+  {
+    "dork": "\"RouterOS\"",
+    "category": "IoT / Routers / Devices",
+    "purpose": "MikroTik router exposure"
+  },
+  {
+    "dork": "\"setup.php\"",
+    "category": "IoT / Routers / Devices",
+    "purpose": "Default setup panels"
+  },
+  {
+    "dork": "\"webmin\"",
+    "category": "IoT / Routers / Devices",
+    "purpose": "Webmin admin portal exposure"
+  }
+]
