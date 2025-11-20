@@ -485,3 +485,182 @@
     "purpose": "Webmin admin portal exposure"
   }
 ]
+
+[
+  {
+    "dork": "intitle:keyword",
+    "category": "Advanced Operator",
+    "purpose": "Search for a keyword in the title"
+  },
+  {
+    "dork": "allintitle:keyword1 keyword2",
+    "category": "Advanced Operator",
+    "purpose": "Search for multiple keywords in the title"
+  },
+  {
+    "dork": "inurl:keyword",
+    "category": "Advanced Operator",
+    "purpose": "Search for a keyword in the URL"
+  },
+  {
+    "dork": "allinurl:keyword1 keyword2",
+    "category": "Advanced Operator",
+    "purpose": "Search for multiple keywords in the URL"
+  },
+  {
+    "dork": "intext:keyword",
+    "category": "Advanced Operator",
+    "purpose": "Search for a keyword in the body of a page"
+  },
+  {
+    "dork": "allintext:keyword1 keyword2",
+    "category": "Advanced Operator",
+    "purpose": "Search for multiple keywords in the body of a page"
+  },
+  {
+    "dork": "filetype:pdf",
+    "category": "Advanced Operator",
+    "purpose": "Search for a specific file type"
+  },
+  {
+    "dork": "site:website.com",
+    "category": "Advanced Operator",
+    "purpose": "Search for pages on a specific website"
+  },
+  {
+    "dork": "cache:website.com",
+    "category": "Advanced Operator",
+    "purpose": "Search for cached pages"
+  },
+  {
+    "dork": "link:website.com/page.html",
+    "category": "Advanced Operator",
+    "purpose": "Search for pages that link to a specific page"
+  },
+  {
+    "dork": "related:website.com/page.html",
+    "category": "Advanced Operator",
+    "purpose": "Search for pages related to a specific URL"
+  },
+  {
+    "dork": "info:website.com/page.html",
+    "category": "Advanced Operator",
+    "purpose": "Display information about a specific web page"
+  },
+  {
+    "dork": "inachor:keyword",
+    "category": "Advanced Operator",
+    "purpose": "Search for a keyword in the anchor text of links to a page"
+  },
+  {
+    "dork": ""intitle:index.of" site:.",
+    "category": "Directory Listing",
+    "purpose": "Search for directory listings on any website"
+  },
+  {
+    "dork": ""intitle:Index of /wp-content/uploads" site:",
+    "category": "WordPress",
+    "purpose": "Search for WordPress uploads directory"
+  },
+  {
+    "dork": "intitle:"index of /files" site:",
+    "category": "General",
+    "purpose": "Search for files directory"
+  },
+  {
+    "dork": "intitle:"index of /Doc" site:",
+    "category": "General",
+    "purpose": "Search for documents directory"
+  },
+  {
+    "dork": "allinurl:wp-login.php?action=register",
+    "category": "WordPress",
+    "purpose": "Search for WordPress registration pages"
+  },
+  {
+    "dork": ""Apache" intitle:"index.of /dist"",
+    "category": "Apache",
+    "purpose": "Search for Apache directory listings"
+  },
+  {
+    "dork": "inurl:*/vendor/ site:.",
+    "category": "General",
+    "purpose": "Search for vendor directory"
+  },
+  {
+    "dork": "intitle:"index of /wp-content/plugins"",
+    "category": "WordPress",
+    "purpose": "Search for WordPress plugins directory"
+  },
+  {
+    "dork": "intitle:"Index of /dist"",
+    "category": "General",
+    "purpose": "Search for software distribution directories"
+  },
+  {
+    "dork": "filetype:txt username password",
+    "category": "Credentials",
+    "purpose": "Search for plain text login credentials"
+  },
+  {
+    "dork": "allintitle:"index of /logs"",
+    "category": "Logs",
+    "purpose": "Search for log files directory"
+  },
+  {
+    "dork": "intitle:"index of" /authorize_payment",
+    "category": "General",
+    "purpose": "Search for authorize_payment directory"
+  },
+  {
+    "dork": "intitle:"index of" /backup",
+    "category": "Backup",
+    "purpose": "Search for backup directories"
+  },
+  {
+    "dork": "intitle:"index of *password"",
+    "category": "Credentials",
+    "purpose": "Search for password files"
+  },
+  {
+    "dork": "intitle:"index of" *username *password filetype:txt",
+    "category": "Credentials",
+    "purpose": "Search for username and password files"
+  },
+  {
+    "dork": "intitle:"index.of /database"",
+    "category": "Database",
+    "purpose": "Search for database directory"
+  },
+  {
+    "dork": "intitle:"index of" database.yml",
+    "category": "Database",
+    "purpose": "Search for database configuration files"
+  },
+  {
+    "dork": "intitle:"index of */vendor/drupal/console-en/"",
+    "category": "Drupal",
+    "purpose": "Search for Drupal Console directory"
+  },
+  {
+    "dork": "intitle:"index of" */admin+password site:.com",
+    "category": "Credentials",
+    "purpose": "Search for admin and password directories on a specific website"
+  },
+  {
+    "dork": "intitle:"Index of c:\\Windows"",
+    "category": "Windows",
+    "purpose": "Search for directory listings in Windows folders"
+  },
+  {
+    "dork": "intitle:"index of" inurl:ftp (pub OR incoming)",
+    "category": "FTP",
+    "purpose": "Search for FTP directory listings"
+  },
+  {
+    "dork": "intitle:index.of passwd passwd.bak",
+    "category": "Credentials",
+    "purpose": "Search for password files"
+  }
+  // ...continue similarly for each dork you pasted
+]
